@@ -1,6 +1,6 @@
 ## Overview
 Quickly setup object names and material IDs for baking in Substance Painter or Designer. <br>
-![image](https://user-images.githubusercontent.com/63724445/135817875-614cf4ad-c5ff-4993-919b-ee4694cdaaad.png)
+![j0whgcv9E2](https://user-images.githubusercontent.com/63724445/189339312-068d6296-bb6c-48f1-a7f6-123e1a999266.jpg)
 
 ## Installation
 To install the add-on in Blender, follow these steps:
@@ -10,9 +10,10 @@ To install the add-on in Blender, follow these steps:
 - The tool can be found in the *BakePrep* panel in the right side menu in Blenders 3D viewport
 
 ## Preferences
+![Weo7b4XJ58](https://user-images.githubusercontent.com/63724445/189339768-46ca6a07-36cd-4e8f-bebe-b1d014660aa3.jpg)
 ### Scene collection
-Setup possible names for the scene collections that the script recognizes for the export process. Names are separated by spaces. <br>
-![image](https://user-images.githubusercontent.com/63724445/135819086-96b99639-4f4b-470b-8012-7eb764cf2899.png)
+Provide possible names for the scene collections that the script recognizes for the export process. Names are separated by spaces. <br>
+![Weo7basdsad4XJ58](https://user-images.githubusercontent.com/63724445/189339811-6a19d75a-52fd-40ab-87ac-0371d8511a7a.jpg)
 
 With the default setup, you can choose between different names for the lowpoly scene collection:
 - lo
@@ -24,15 +25,16 @@ With the default setup, you can choose between different names for the lowpoly s
 ### Export
 Choose if the exported files should be stored in the same folder as your blender scene or in a default path.
 You can also add the filepath of your Substance Painter executable here if you want to be able to start Substance 3D Painter directly from Blender. The path has to look something like this: *C:\Program Files\Allegorithmic\Substance Painter\Substance Painter.exe* <br>
-![image](https://user-images.githubusercontent.com/63724445/135819257-24122d49-a001-4390-adcc-6138bddf891b.png)
+![Weo7b4eawewaXJ58](https://user-images.githubusercontent.com/63724445/189340177-72938f82-1508-4ece-9dd9-acace56f9e9f.jpg)
+
 
 ## Usage
 
 ### Prerequisites
 First, make sure that you have two collections in the scene: one for all highpoly meshes and one for all lowpoly meshes. The names of the collection are important because the script relies on the collection names to detect which objects are intended to be the highpoly and which are the lowpoly objects. <br> **Possible collection names can be setup in the addon preferences.** <br>
-![image](https://user-images.githubusercontent.com/63724445/136044069-952fb784-45cc-4a3f-afb8-e9e85c38bd58.png) <br>
+![hnK5udnwob](https://user-images.githubusercontent.com/63724445/189340357-734fd9d2-c351-4895-b26a-e8997c8c64af.jpg) <br>
 If everything is fine, you see these messages at the top of the UI and all buttons are activated: <br>
-![image](https://user-images.githubusercontent.com/63724445/136048434-1d93ef4e-7afd-48e4-b070-9ca3c179091d.png) <br>
+![j0whgcasdsav9E2](https://user-images.githubusercontent.com/63724445/189340404-e8678e1c-36c0-4882-a4ec-72aa8d7aad34.jpg) <br>
 If not, please double check if you have the needed scene collections and they have the correct names.
 
 
@@ -54,4 +56,4 @@ While the lowpoly is hidden, select different highpoly meshes and click on one o
 
 ### Export
 Export your lowpoly and highpoly meshes. If you setup your Subtance 3D Painter path, you can also choose to start the application here. <br>
-![image](https://user-images.githubusercontent.com/63724445/136047921-b6e41f10-f74e-4d3a-a015-df2782280e82.png)
+![j0whadsagcv9E2](https://user-images.githubusercontent.com/63724445/189340536-251e20bf-0b3f-4077-a660-fb508887012d.jpg)
