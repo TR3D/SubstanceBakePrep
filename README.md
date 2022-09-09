@@ -1,6 +1,3 @@
-* TOC
-{:toc}
-
 ## Overview
 Quickly setup object names and material IDs for baking in Substance Painter or Designer. <br>
 ![image](https://user-images.githubusercontent.com/63724445/135817875-614cf4ad-c5ff-4993-919b-ee4694cdaaad.png)
