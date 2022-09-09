@@ -1,6 +1,7 @@
 ## Overview
 Quickly setup object names and material IDs for baking in Substance Painter or Designer. <br>
-![j0whgcv9E2](https://user-images.githubusercontent.com/63724445/189339312-068d6296-bb6c-48f1-a7f6-123e1a999266.jpg)
+![blender_fuKptJ4bza](https://user-images.githubusercontent.com/63724445/189341070-a75e36af-bca0-4707-9c70-e3ac30ef8757.gif)
+
 
 ## Installation
 To install the add-on in Blender, follow these steps:
