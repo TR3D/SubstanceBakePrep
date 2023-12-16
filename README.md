@@ -4,6 +4,8 @@ Quickly setup object names and material IDs for baking in Substance Painter or D
 
 
 ## Installation
+Download the script [here ](https://github.com/TR3D/SubstanceBakePrep/blob/main/src/BakePrepTool.py)
+
 To install the add-on in Blender, follow these steps:
 - In Blenders top menu, go to **Edit -> Preferences**, choose the Add-ons section in the Preferences panel and click the Install button
 - In the browser window that appears, select the location of the add-on and click Install
