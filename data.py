@@ -120,22 +120,28 @@ class TR3D_OT_BakeSet_Remove(bpy.types.Operator):
     def execute(self, context):
         data = context.scene.bakeprep_global_data
         bake_set = context.scene.bakeprep_data
-        print()
-        if len(data.enum_data) != 0:
-            did = [x[0] for x in data.enum_data].index(data.bake_sets) # I search for index of current enum in my list [0] items of my tuples 
-            data.enum_data.pop(did) 
 
-            # at this moment the list is changed and enum property regenerated
-            if did>len(data.enum_data)-1 and data.enum_data != []: # in case the last item was deleted, set bake set to second to last entry
-                data.bake_sets = data.enum_data[len(data.enum_data)-1][0]
+        index = data.enum_data.index( (data.active_bakeset_name, data.active_bakeset_name, '') )
+        data.enum_data.pop(index)
 
-            # delete scene data
-            i=0
-            for item in bake_set:
-                if item.bakeset_name == data.bake_sets:
-                    bake_set.remove(i)
-                    break
-                i += 1
+        # delete scene data
+        i=0
+        for item in bake_set:
+            if item.bakeset_name == data.bake_sets:
+                bake_set.remove(i)
+                break
+            i += 1
+ 
+        # set enum to first entry
+        if index >= len(data.enum_data)-1 and len(data.enum_data)-1 > 1:
+            data.bake_sets = data.enum_data[0][0]
+        # or 
+        elif index == 0 and data.enum_data != []:
+            if len(data.enum_data) > 1:
+                data.bake_sets = data.enum_data[1][0]
+            else:
+                data.active_bakeset_name = ""
+                data.active_low_poly_meshes.clear()
+                data.active_high_poly_meshes.clear()
 
-        else: return report(self,'No more items to remove')
         return{'FINISHED'}
